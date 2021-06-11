@@ -9,6 +9,13 @@
     border-radius: 0.5rem;
 }
 
+.centerheader {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: white;
+}
+
 .centerheader__icon {
     color: var(--fb-grey03);
     height: 45px;
