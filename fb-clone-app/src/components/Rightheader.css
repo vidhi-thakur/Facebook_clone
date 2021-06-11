@@ -1,0 +1,29 @@
+.rightheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.borderRound {
+    border-radius: 999px;
+    padding: 0.5rem;
+}
+
+.borderRound:hover{
+    background-color: var(--fb-grey02);
+}
+
+.rightheader__userInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightheader__userInfo>h4 {
+    margin: 0px;
+}
+
+.rightheader__icon {
+    background-color: var(--fb-grey01);
+}

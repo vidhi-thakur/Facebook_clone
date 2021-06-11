@@ -21,7 +21,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--fb-grey02);
+    background-color: var(--fb-grey01);
     padding: 0.5rem;
     border-radius: 999px;
     /* flex: 1; */
