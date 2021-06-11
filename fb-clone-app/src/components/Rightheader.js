@@ -15,7 +15,7 @@ function Rightheader() {
             </div>
             <AddRoundedIcon className="rightheader__icon borderRound" />
             <ForumRoundedIcon className="rightheader__icon borderRound" />
-            <NotificationsRoundedIcon className="rightheader__+icon borderRound" />
+            <NotificationsRoundedIcon className="rightheader__icon borderRound" />
             <ExpandMoreRoundedIcon className="rightheader__icon borderRound" />
         </div>
     )

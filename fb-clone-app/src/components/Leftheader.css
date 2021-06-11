@@ -1,9 +1,3 @@
-:root {
-    --fb-blue: #3578E5;
-    --fb-grey01: #DADDE1;
-    --fb-grey02: #BEC3C9;
-}
-
 .leftheader {
     display: flex;
     flex-direction: row;

@@ -1,0 +1,25 @@
+.sidebarRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: var(--fb-grey01);
+    border-radius: 0.5rem;
+}
+
+.sidebarRow:hover {
+    background-color: var(--fb-grey02);
+}
+
+.sidebarRow__icon {
+    margin: 0px 0.5rem;
+}
+
+.sidebarRow>h4 {
+    margin: 0.5rem;
+}
+
+.icons {
+    color: var(--fb-blue);
+}

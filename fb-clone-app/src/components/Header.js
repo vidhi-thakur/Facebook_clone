@@ -6,14 +6,11 @@ import Centerheader from "./Centerheader";
 
 function Header() {
     return (
-        <div>
-            {/* container-left */}
+        <div className="header">
             <Leftheader />
 
-            {/* container-center */}
             <Centerheader />
 
-            {/* container-right */}
             <Rightheader />
         </div>
     )
