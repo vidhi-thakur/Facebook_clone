@@ -1,0 +1,27 @@
+:root {
+    --fb-blue: #3578E5;
+    --fb-grey01: #DADDE1;
+    --fb-grey02: #BEC3C9;
+    --fb-grey03: #606770;
+}
+
+.border {
+    border-radius: 0.5rem;
+}
+
+.centerheader__icon {
+    color: var(--fb-grey03);
+    height: 45px;
+    padding: 0.5rem 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.active {
+    color: var(--fb-blue);
+    border-bottom: 2.5px solid var(--fb-blue);
+    border-radius: none;
+}
+
+.border:hover {
+    background-color: var(--fb-grey01);
+}

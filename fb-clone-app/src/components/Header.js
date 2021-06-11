@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Header.css"
 import Leftheader from './Leftheader';
+import Rightheader from "./Rightheader";
+import Centerheader from "./Centerheader";
 
 function Header() {
     return (
@@ -9,8 +11,10 @@ function Header() {
             <Leftheader />
 
             {/* container-center */}
+            <Centerheader />
 
             {/* container-right */}
+            <Rightheader />
         </div>
     )
 }
