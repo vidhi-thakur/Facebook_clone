@@ -1,0 +1,35 @@
+:root {
+    --fb-blue: #3578E5;
+    --fb-grey01: #DADDE1;
+    --fb-grey02: #BEC3C9;
+}
+
+.leftheader {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+}
+
+.leftheader>img {
+    height: 45px;
+    padding: 0.5rem;
+    margin-inline-start: 1rem;
+}
+
+.leftheader__search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fb-grey02);
+    padding: 0.5rem;
+    border-radius: 999px;
+    /* flex: 1; */
+}
+
+.leftheader__search>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
