@@ -1,0 +1,32 @@
+.story {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.75);
+    position: relative;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    margin: 0.2rem;
+}
+
+.story:hover {
+    transform: scale(1.07);
+}
+
+.story>h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    margin: 0px;
+}
+
+.story__profilePic {
+    border: 5px solid var(--fb-blue);
+    border-radius: 999px;
+}
+

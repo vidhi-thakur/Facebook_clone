@@ -1,0 +1,80 @@
+.messageBox {
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.flexBox {
+    display: flex;    
+    align-items: center;
+}
+
+.messageBox__top {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--fb-grey01);
+}
+
+.messageBox--inputSection {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.messageBox--input {
+    padding: 0.7rem;
+    border-radius: 999px;
+    background-color: var(--fb-grey02);
+    border: none;
+    outline: none;
+}
+
+.ip1 {
+    width: 55%;
+}
+
+.messageBox--inputSection>button {
+    display: none;
+}
+
+.messageBox__bottom {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.icon3 {
+    flex-direction: row;
+    padding: 0px 1rem;
+    border-radius: 0.5rem;
+}
+
+.icon3:hover {
+    background-color: var(--fb-grey02);
+}
+
+.icon3>h4 {
+    color: var(--fb-grey03);
+    margin: 1rem 0px;
+}
+
+.m {
+    margin-right: 0.5rem;
+}
+
+.msgBox--videoIcon {
+    color: red;
+}
+
+.msgBox--photoIcon {
+    color: green;
+}
+
+.msgBox--smileIcon {
+    color: yellow;
+}
