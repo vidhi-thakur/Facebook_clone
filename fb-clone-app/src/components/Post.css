@@ -1,0 +1,72 @@
+.post {
+    margin: 1rem 0px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.head--profilePic {
+    margin-right: 1rem;
+}
+
+.post__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.post_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.mar {
+    margin: 0px;
+}
+
+.ip_img {
+    width: 612px;
+}
+
+.post__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.post__input>p, .icons--lc>p {
+    margin-inline-start: 1rem;
+}
+
+.ip {
+    padding: 0px 0px 0.5rem 1rem;
+}
+
+.post__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    border-top: 1px solid var(--fb-grey02);
+
+}
+
+.icons--lc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0px;
+    border-radius: 0.5rem;
+    width: 50%;
+}
+
+.icons--lc:hover{
+    background-color: var(--fb-grey01);
+}
+
+.icon--bottom {
+    color: var(--fb-grey03);
+}

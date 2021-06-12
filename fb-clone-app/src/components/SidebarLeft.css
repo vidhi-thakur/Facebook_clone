@@ -1,0 +1,6 @@
+.sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-top: 0.5rem;
+}
