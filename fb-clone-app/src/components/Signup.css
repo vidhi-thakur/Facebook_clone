@@ -1,0 +1,26 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.img1 {
+    width: 130px;
+}
+
+.signup>button {
+    padding: 0.5rem 3.5rem;
+    background-color: var(--fb-blue);
+    border: 1px solid var(--fb-blue);
+    outline: none;
+    color: white;
+    border-radius: 0.2rem;
+    margin-top: 25vh;
+}
+
+.signup>button:hover {
+    background-color: white;
+    color: var(--fb-blue);
+}
