@@ -28,7 +28,7 @@
 .messageBox--input {
     padding: 0.7rem;
     border-radius: 999px;
-    background-color: var(--fb-grey02);
+    background-color: var(--fb-grey01);
     border: none;
     outline: none;
 }
@@ -55,7 +55,7 @@
 }
 
 .icon3:hover {
-    background-color: var(--fb-grey02);
+    background-color: var(--fb-grey01);
 }
 
 .icon3>h4 {

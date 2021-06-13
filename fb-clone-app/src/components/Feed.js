@@ -9,19 +9,19 @@ import db from "../firebase"
 function Feed() {
 
     const [{user}, dispatch] = useStateValue();
-    const [post, setPost] = useState([])
+    const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        db.collection("posts").orderBy("", "desc").onSnapshot(snapshot=>setPost(snapshot.docs.map(docs => ({
-            id: docs.id,
-            data: docs.data()
+        db.collection("posts").orderBy("timestamp", "desc").onSnapshot((snapshot) => setPosts(snapshot.docs.map(doc => ({
+            id: doc.id,
+            data: doc.data()
         }))))
     }, [])
 
     return (
         <div className="feed">
             {/* story */}
-            <div class="feed__story">
+            <div className="feed__story">
                 <Story title="Vishal Saini" profileImage="https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/46778406_1568267003319614_8909902577445896192_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=174925&_nc_ohc=hH_2WkmJ7CkAX_Vttxw&_nc_ht=scontent-del1-1.xx&oh=649d810ed5a4338120caac3def0d93a5&oe=60C8AB57" backgroundImg="https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/p843x403/51577565_2364993850391219_1616942392512872448_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=730e14&_nc_ohc=_DUfWx_uifoAX8J91YS&_nc_ht=scontent-del1-1.xx&tp=6&oh=465f3d93e3f6598acde3e142771d99db&oe=60C82E5E" />
                 <Story title="Suraj Singh Mehta" profileImage="https://scontent-del1-1.xx.fbcdn.net/v/t31.18172-1/p320x320/26170782_1210772129054756_7449440609752178435_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=7206a8&_nc_ohc=CO95puI29tkAX8TfQfz&tn=MvU51iVHHCyCFKu-&_nc_ht=scontent-del1-1.xx&tp=6&oh=8cee21cd58bca1485c633e6cfb9a9720&oe=60E9BF91" backgroundImg="https://www.memesmonkey.com/images/memesmonkey/a8/a80d70da2efb5b1c997d22fd6b41cede.jpeg" />
                 <Story title="Chetanya Thakur" profileImage="https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/31124700_920589701444411_3626258110831656960_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=EiOoI3923xgAX9SoP6Y&_nc_ht=scontent-del1-1.xx&oh=451066cd32849a1a431f23f30a9ae671&oe=60C7E6C0" backgroundImg="https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/51773381_2284405958292477_7311710002102665216_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=kEl60mfHaN0AX88NBYt&tn=MvU51iVHHCyCFKu-&_nc_ht=scontent-del1-1.xx&oh=b44767fcb70cffa588c6ac47a28f6dab&oe=60C8DE32" />
@@ -37,9 +37,9 @@ function Feed() {
             <div className="feed__post">
                 <Post  title={user.displayName} porfileImg={user.photoURL} timestamp="timestamp..." img="https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/196017504_5589838887753228_3500765452708367770_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=0IVDP6xLiAEAX8ctR9-&_nc_ht=scontent-del1-1.xx&oh=b9847d889bf053d7d40b80583f32ed7b&oe=60C9D4DA" input="Test post" />
                 {
-                    post.map(post => {
-                        <Post  title={post.data.userName} porfileImg={post.data.profilePicture} timestamp={post.data.timestamp} img={post.data.inputImage} input={post.data.userInput} />
-                    })
+                    posts.map(post => 
+                        (<Post key={post.id}  title={post.data.userName} porfileImg={post.data.profilePicture} timestamp={post.data.timestamp} img={post.data.inputImage} input={post.data.userInput} />)
+                    )
                 }
             </div>
         </div>

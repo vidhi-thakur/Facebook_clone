@@ -20,7 +20,7 @@ function Messagebox({profileImg, name}) {
             profilePicture: profileImg,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             userInput: input,
-            inputImage: image
+            inputImage: image,
         })
 
         setInput("")
@@ -33,7 +33,7 @@ function Messagebox({profileImg, name}) {
                 <form className="flexBox messageBox--inputSection">
                     <input value={input} onChange={(e)=>setInput(e.target.value)} className="messageBox--input ip1" placeholder={`What's on your mind, ${name}?`} />
                     <input value={image} onChange={(e)=>setImage(e.target.value)} className="messageBox--input" placeholder="Enter image URL (optional)" />
-                    <button type="submit" onClick={e=>onClickHandler}>Hidden button</button>
+                    <button type="submit" onClick={onClickHandler}>Hidden button</button>
                 </form>
             </div>
 
