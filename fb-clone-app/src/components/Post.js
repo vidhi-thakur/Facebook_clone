@@ -12,7 +12,7 @@ function Post({porfileImg, img, title, input, timestamp}) {
                 <Avatar className="head--profilePic" src={porfileImg} />
                 <div className="post_info">
                     <h4 className="mar">{title}</h4>
-                    <p className="mar">{timestamp}</p>
+                    <p className="mar">{new Date(timestamp?.toDate()).toUTCString()}</p>
                 </div>
             </div>
             <div post__input>

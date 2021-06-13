@@ -4,14 +4,24 @@ import PhotoLibraryRoundedIcon from '@material-ui/icons/PhotoLibraryRounded';
 import InsertEmoticonRoundedIcon from '@material-ui/icons/InsertEmoticonRounded';
 import { Avatar } from "@material-ui/core"
 import "./Messagebox.css"
+import db from '../firebase';
+import firebase from 'firebase';
 
 function Messagebox({profileImg, name}) {
 
-    const [imput, setInput] = useState("");
+    const [input, setInput] = useState("");
     const [image, setImage] = useState("");
 
     const onClickHandler = (e) => {
         e.preventDefault();
+
+        db.collection("posts").add({
+            userName: name,
+            profilePicture: profileImg,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            userInput: input,
+            inputImage: image
+        })
 
         setInput("")
         setImage("")
@@ -21,8 +31,8 @@ function Messagebox({profileImg, name}) {
             <div className="messageBox__top flexBox">
                 <Avatar src={profileImg} />
                 <form className="flexBox messageBox--inputSection">
-                    <input className="messageBox--input ip1" placeholder={`What's on your mind, ${name}?`} />
-                    <input className="messageBox--input" placeholder="Enter image URL (optional)" />
+                    <input value={input} onChange={(e)=>setInput(e.target.value)} className="messageBox--input ip1" placeholder={`What's on your mind, ${name}?`} />
+                    <input value={image} onChange={(e)=>setImage(e.target.value)} className="messageBox--input" placeholder="Enter image URL (optional)" />
                     <button type="submit" onClick={e=>onClickHandler}>Hidden button</button>
                 </form>
             </div>
