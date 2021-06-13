@@ -1,19 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import VideocamRoundedIcon from '@material-ui/icons/VideocamRounded';
 import PhotoLibraryRoundedIcon from '@material-ui/icons/PhotoLibraryRounded';
 import InsertEmoticonRoundedIcon from '@material-ui/icons/InsertEmoticonRounded';
 import { Avatar } from "@material-ui/core"
 import "./Messagebox.css"
 
-function Messagebox() {
+function Messagebox({profileImg, name}) {
+
+    const [imput, setInput] = useState("");
+    const [image, setImage] = useState("");
+
+    const onClickHandler = (e) => {
+        e.preventDefault();
+
+        setInput("")
+        setImage("")
+    }
     return (
         <div className="messageBox flexBox">
             <div className="messageBox__top flexBox">
-                <Avatar />
+                <Avatar src={profileImg} />
                 <form className="flexBox messageBox--inputSection">
-                    <input className="messageBox--input ip1" placeholder="What's on your mind, Vidhi?" />
+                    <input className="messageBox--input ip1" placeholder={`What's on your mind, ${name}?`} />
                     <input className="messageBox--input" placeholder="Enter image URL (optional)" />
-                    <button>Hidden button</button>
+                    <button type="submit" onClick={e=>onClickHandler}>Hidden button</button>
                 </form>
             </div>
 

@@ -4,10 +4,12 @@ import SidebarLeft from './components/SidebarLeft';
 import Feed from './components/Feed';
 import SidebarRight from "./components/SidebarRight"
 import SignUp from './components/SignUp';
+import {useStateValue} from "./StateProvider"
 
 function App() {
 
-  const user = null;
+  const [{user}, dispatch] = useStateValue();
+
   return (
     <>
         {!user? (<SignUp />): (<div className="App">
