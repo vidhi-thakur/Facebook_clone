@@ -10,6 +10,8 @@
 #### Check out the facebook clone here: https://fb-clone-1e13b.web.app
 
 PS. Upcoming features:-
-1. Responsive
-2. Style - border-top on images and sidebars sticking to their position
-3. login through username and password
+1. Responsiveness
+1. Style - border-top on images, navbar avatar and sidebars sticking to their position
+1. login through username and password
+1. adding like and comment feature
+1. global timestamp
