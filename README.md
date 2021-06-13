@@ -11,5 +11,5 @@
 
 PS. Upcoming features:-
 1. Responsive
-2. Style - border-top on images
+2. Style - border-top on images and sidebars sticking to their position
 3. login through username and password
