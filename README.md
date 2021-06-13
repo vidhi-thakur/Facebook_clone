@@ -8,3 +8,8 @@
  1. Firebase hosting
 
 #### Check out the facebook clone here: https://fb-clone-1e13b.web.app
+
+PS. Upcoming features:-
+1. Responsive
+2. Style - border-top on images
+3. login through username and password
