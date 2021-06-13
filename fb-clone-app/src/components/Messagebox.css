@@ -4,6 +4,7 @@
     background-color: white;
     padding: 1rem;
     border-radius: 0.5rem;
+    box-shadow: 0px 7px 5px -7px rgba(0, 0, 0, 0.75);
 }
 
 .flexBox {
