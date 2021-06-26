@@ -16,13 +16,13 @@ function App() {
       <Header />
       <div className="body">
         {/* sidebar-left */}
-      <SidebarLeft />
+      <SidebarLeft className="body__sidebar" />
 
         {/* main feed  */}
-        <Feed />
+        <Feed className="body__center" />
 
         {/* sidebar right  */}
-        <SidebarRight />
+        <SidebarRight className="body__sidebar" />
 
       </div>
     </div>)}
