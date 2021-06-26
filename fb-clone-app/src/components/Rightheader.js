@@ -11,7 +11,7 @@ function Rightheader({profileImg, name}) {
         <div className="rightheader">
             <div className="rightheader__userInfo borderRound">
                 <Avatar src={profileImg} />
-                <h4>{name}</h4>
+                <h5>{name}</h5>
             </div>
             <AddRoundedIcon className="rightheader__icon borderRound" />
             <ForumRoundedIcon className="rightheader__icon borderRound" />

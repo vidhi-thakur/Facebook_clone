@@ -18,15 +18,22 @@
 
 .rightheader__userInfo {
     display: flex;
+    padding: 0.2rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.rightheader__userInfo>h4 {
+.rightheader__userInfo>h5 {
     margin: 0px;
 }
 
 .rightheader__icon {
     background-color: var(--fb-grey01);
+}
+
+.MuiAvatar-img {
+    height: 37px!important;
+    width: 37px!important;
+    border-radius: 999px;
 }

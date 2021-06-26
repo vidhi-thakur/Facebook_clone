@@ -40,7 +40,7 @@ function Feed() {
                     ))
                 }
 
-                <Post  title={user.displayName} porfileImg={user.photoURL} timestamp="timestamp..." img="https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/196017504_5589838887753228_3500765452708367770_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=0IVDP6xLiAEAX8ctR9-&_nc_ht=scontent-del1-1.xx&oh=b9847d889bf053d7d40b80583f32ed7b&oe=60C9D4DA" input="Test post" />
+                <Post  title={user.displayName} porfileImg={user.photoURL} timestamp="timestamp..." img="https://about.fb.com/wp-content/uploads/2018/11/fb-hero-image-001.jpeg?fit=1920%2C1080" input="Welcome to the facebook clone!" />
                 
 
             </div>

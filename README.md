@@ -11,6 +11,4 @@
 
 PS. Upcoming features:-
 1. Responsiveness
-1. Style - border-top on images, navbar avatar and sidebars sticking to their position
 1. adding like and comment feature
-1. global timestamp

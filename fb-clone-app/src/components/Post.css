@@ -47,6 +47,7 @@
 
 .ip {
     padding: 0px 0px 0.5rem 1rem;
+    border-bottom: 1px solid var(--fb-grey02);
 }
 
 .post__icons {
