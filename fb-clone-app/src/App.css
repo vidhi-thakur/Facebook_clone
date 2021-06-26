@@ -9,8 +9,3 @@
     display: flex;
     justify-content: space-between;
 }
-
-.body__sidebar {
-  position: sticky;
-  top:0;
-}

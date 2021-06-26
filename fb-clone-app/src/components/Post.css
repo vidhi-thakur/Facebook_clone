@@ -32,6 +32,7 @@
     height: 500px;
     display: block;
     margin: auto;
+    object-fit: cover;
 }
 
 .post__input {
