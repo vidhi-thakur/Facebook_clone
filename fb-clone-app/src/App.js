@@ -22,7 +22,7 @@ function App() {
           <Feed />
 
         {/* sidebar right  */}
-          <SidebarRight className="body__sidebar" />
+        <SidebarRight className="body__sidebar" />
 
       </div>
     </div>)}
