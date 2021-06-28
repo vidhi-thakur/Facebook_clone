@@ -36,6 +36,18 @@
     object-fit: cover;
 }
 
+.post__likeCommentCount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.post--Count {
+    color: var(--fb-grey03);
+    margin: 0px;
+}
+
 .post__input {
     display: flex;
     flex-direction: column;
