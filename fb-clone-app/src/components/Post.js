@@ -19,6 +19,7 @@ function Post({porfileImg, img, title, input, timestamp}) {
                 <p className="mar ip">{input}</p>
                 {img && <img className="ip_img" src={img} />}
             </div>
+            
             <div className="post__icons">
                 <div className="icons--lc">
                     <ThumbUpAltRoundedIcon className="icon--bottom" />
