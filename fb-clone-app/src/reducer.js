@@ -1,12 +1,12 @@
 export const initialState = {
     user:null,
-    comment: []
+    // comment: []
 };
 
 export const actionTypes = {
     SET_USER: "SET_USER",
-    SET_LIKES: "SET_LIKES",
-    REMOVE_LIKES: "REMOVE_LIKES"
+    // SET_LIKES: "SET_LIKES",
+    // REMOVE_LIKES: "REMOVE_LIKES"
 }
 
 const reducer = (state, action) => {
