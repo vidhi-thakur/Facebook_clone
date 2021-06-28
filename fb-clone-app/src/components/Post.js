@@ -12,25 +12,36 @@ function Post({porfileImg, img, title, input, timestamp}) {
     const [{user, likes}, dispatch] = useStateValue();
 
     const [flag, setFlag] = useState(false)
+    const [comment, setComment] = useState(false)
+    const [count, setCount] = useState(0)
 
     const countLikes = () => {
+        setFlag(!flag)
+
         if(!flag) {
+            setCount(count+1)
+        } else {
+            setCount(count-1)
+        }
+    }
+
+    const showComments = () => {
+        setFlag(!comment)
+
+        if(!comment) {
             dispatch({
                 type: actionTypes.SET_LIKES,
                 item: {
+                    timestamp: timestamp,
                     id: user.uid
                 }
             })
         } else {
             dispatch({
                 type: actionTypes.REMOVE_LIKES,
-                item: {
-                    id: user.uid
-                }
+                id: user.uid,
             })
         }
-
-        setFlag(!flag)
     }
 
     return (
@@ -47,15 +58,15 @@ function Post({porfileImg, img, title, input, timestamp}) {
                 {img && <img className="ip_img" src={img} alt="Img missing" />}
             </div>
             <div className="post__likeCommentCount">
-                <p className="post--Count">{`${likes.length}`} Likes</p>
+                <p className="post--Count">{`${count}`} Likes</p>
                 <p className="post--Count">2 Comments</p>
             </div>
             <div className="post__icons">
-                <div className="icons--lc">
-                    <ThumbUpAltRoundedIcon onClick={countLikes} className={flag?"icon--bottom active--icon": "icon--bottom"} />
+                <div onClick={countLikes} className="icons--lc">
+                    <ThumbUpAltRoundedIcon className={flag?"icon--bottom active--icon": "icon--bottom"} />
                     <p className={flag?"mar icon--bottom active--icon": "mar icon--bottom"}>Like</p>
                 </div>
-                <div className="icons--lc">
+                <div onClick={showComments} className="icons--lc">
                     <ChatBubbleOutlineRoundedIcon className="icon--bottom" />
                     <p className="mar icon--bottom">Comments</p>
                 </div>

@@ -1,6 +1,6 @@
 export const initialState = {
     user:null,
-    likes: []
+    comment: []
 };
 
 export const actionTypes = {
@@ -12,27 +12,27 @@ export const actionTypes = {
 const reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
-        case actionTypes.SET_LIKES:
-            return {
-                ...state,
-                likes: [...state.likes, action.item]
-            }
-        case actionTypes.REMOVE_LIKES:
-            let newLikes = [...state.likes];
+        // case actionTypes.SET_LIKES:
+        //     return {
+        //         ...state,
+        //         comment: [...state.likes, action.item]
+        //     }
+        // case actionTypes.REMOVE_LIKES:
+        //     let newComment = [...state.likes];
 
-            const index = state.likes.findIndex((likeItem) => action.item.id === likeItem.id)
+        //     const index = state.likes.findIndex((likeItem) => action.id === likeItem.id)
 
-            if(index>=0) {
-                newLikes.splice(index, 1)
-            }
-            else {
-                console.warn(`${action.item.id} did not like the post`);
-            }
+        //     if(index>=0) {
+        //         newComment.splice(index, 1)
+        //     }
+        //     else {
+        //         console.warn(`${action.item.id} did not like the post`);
+        //     }
 
-            return {
-                ...state,
-                likes: newLikes
-            }
+        //     return {
+        //         ...state,
+        //         likes: newLikes
+        //     }
         case actionTypes.SET_USER:
             return {
                 ...state,
