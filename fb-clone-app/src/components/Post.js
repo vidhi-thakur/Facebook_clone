@@ -53,7 +53,7 @@ function Post({porfileImg, img, title, input, timestamp}) {
             <div className="post__icons">
                 <div className="icons--lc">
                     <ThumbUpAltRoundedIcon onClick={countLikes} className={flag?"icon--bottom active--icon": "icon--bottom"} />
-                    <p className="mar icon--bottom">Like</p>
+                    <p className={flag?"mar icon--bottom active--icon": "mar icon--bottom"}>Like</p>
                 </div>
                 <div className="icons--lc">
                     <ChatBubbleOutlineRoundedIcon className="icon--bottom" />
