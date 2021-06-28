@@ -28,7 +28,8 @@
 }
 
 .ip_img {
-    max-width: 608px;
+    /* max-width: 608px; */
+    width: 100%;
     height: 500px;
     display: block;
     margin: auto;

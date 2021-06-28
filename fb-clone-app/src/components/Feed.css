@@ -9,5 +9,14 @@
 .feed {
     padding-top: 0.5rem;
     width: 608px;
+    max-width: 90%;
     margin-top: 4.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .feed {
+        padding-top: 4rem;
+        display: block;
+        margin: auto;
+    }
 }

@@ -37,3 +37,9 @@
     width: 37px!important;
     border-radius: 999px;
 }
+
+@media screen and (max-width: 700px) {
+    .rightheader__userInfo {
+        display: none!important;
+    }
+}

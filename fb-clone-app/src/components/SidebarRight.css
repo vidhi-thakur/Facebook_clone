@@ -3,3 +3,9 @@
     top:75.6px;
     height: 100vh;
 }
+
+@media screen and (max-width: 700px) {
+    .sidebarRight {
+        display: none!important;
+    }
+}

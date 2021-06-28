@@ -18,11 +18,32 @@
     background-color: var(--fb-grey01);
     padding: 0.5rem;
     border-radius: 999px;
-    /* flex: 1; */
 }
 
 .leftheader__search>input {
     background-color: transparent;
     border: none;
     outline: none;
+}
+
+.leftheader__menu {
+    margin-inline-start: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.leftheader__menu:hover {
+    background-color: var(--fb-grey01);
+}
+
+@media screen and (min-width: 700px) {
+    .leftheader__menu {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .leftheader__search>input {
+        display: none!important;
+    }
 }

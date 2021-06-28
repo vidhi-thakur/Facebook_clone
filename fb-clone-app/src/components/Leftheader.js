@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Leftheader.css"
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 function Leftheader() {
     return (
@@ -10,6 +11,7 @@ function Leftheader() {
                 <SearchRoundedIcon />
                 <input placeholder="Search Facebook" />
             </div>
+            <MenuRoundedIcon className="leftheader__menu" />
         </div>
     )
 }
