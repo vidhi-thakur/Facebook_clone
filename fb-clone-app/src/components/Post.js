@@ -9,7 +9,7 @@ import { actionTypes } from '../reducer'
 
 function Post({porfileImg, img, title, input, timestamp}) {
 
-    const [{user, likes}, dispatch] = useStateValue();
+    const [{user}, dispatch] = useStateValue();
 
     const [flag, setFlag] = useState(false)
     const [comment, setComment] = useState(false)

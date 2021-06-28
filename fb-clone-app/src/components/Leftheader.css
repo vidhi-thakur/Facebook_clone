@@ -10,6 +10,15 @@
     margin-inline-start: 1rem;
 }
 
+@media screen and (max-width: 400px) {
+    .leftheader>img {
+        margin-inline-start: 0px;
+    }
+    .leftheader {
+        justify-content: space-evenly;
+    }
+}
+
 .leftheader__search {
     display: flex;
     flex-direction: row;
@@ -43,7 +52,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .leftheader__search>input {
+    .leftheader__search {
         display: none!important;
     }
 }

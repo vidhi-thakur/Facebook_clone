@@ -20,10 +20,27 @@
     border-bottom: 1px solid var(--fb-grey01);
 }
 
+@media screen and (max-width: 600px) {
+    .icon2 {
+        display: none!important;
+    }
+    .ip1 {
+        max-width: 45%;
+    }
+    .messageBox--inputSection {
+        justify-content: flex-start!important;
+    }
+}
+
 .messageBox--inputSection {
     flex-direction: row;
     justify-content: space-evenly;
     flex: 1;
+    max-width: 100%;
+}
+
+.ip2 {
+    max-width: 20%;
 }
 
 .messageBox--input {
@@ -35,7 +52,8 @@
 }
 
 .ip1 {
-    width: 55%;
+    flex: 1;
+    margin: 0px 0.5rem;
 }
 
 .messageBox--inputSection>button {

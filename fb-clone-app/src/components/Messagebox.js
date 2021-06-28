@@ -32,7 +32,7 @@ function Messagebox({profileImg, name}) {
                 <Avatar src={profileImg} />
                 <form className="flexBox messageBox--inputSection">
                     <input value={input} onChange={(e)=>setInput(e.target.value)} className="messageBox--input ip1" placeholder={`What's on your mind, ${name}?`} />
-                    <input value={image} onChange={(e)=>setImage(e.target.value)} className="messageBox--input" placeholder="Enter image URL (optional)" />
+                    <input value={image} onChange={(e)=>setImage(e.target.value)} className="messageBox--input ip2" placeholder="Enter image URL (optional)" />
                     <button type="submit" onClick={onClickHandler}>Hidden button</button>
                 </form>
             </div>
@@ -46,7 +46,7 @@ function Messagebox({profileImg, name}) {
                     <PhotoLibraryRoundedIcon className="m msgBox--photoIcon" />
                     <h4>Photo/video</h4>
                 </div>
-                <div className="icon3 flexBox">
+                <div className="icon3 flexBox icon2">
                     <InsertEmoticonRoundedIcon className="m msgBox--smileIcon" />
                     <h4>Feeling/Activity</h4>
                 </div>
