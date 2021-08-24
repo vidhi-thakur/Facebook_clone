@@ -7,7 +7,7 @@
  1. Firebase google authentication
  1. Firebase hosting
 
-#### Check out the facebook clone here: https://fb-clone-1e13b.firebaseapp.com/
+#### Check out the facebook clone here: https://fb-clone-1e13b.web.app/
 
 PS. Upcoming features:-
 1. Responsiveness
